@@ -36,8 +36,8 @@ setInterval(() => {
     if (err) { return console.log(err); }
     
     data.sessions.forEach(function(vaccine){
-        if(vaccine.available_capacity_dose1>0){
-            console.log(td+'   '+vaccine.pincode);
+        if(vaccine.available_capacity_dose1>0 && vaccine.min_age_limit===18){
+            console.log(td+'   '+vaccine.pincode+' '+vaccine.available_capacity_dose1);
         }
     });
 
@@ -50,8 +50,8 @@ setInterval(() => {
     if (err) { return console.log(err); }
     
     data.sessions.forEach(function(vaccine){
-        if(vaccine.available_capacity_dose1>0){
-            console.log(atd+'    '+vaccine.pincode);
+        if(vaccine.available_capacity_dose1>0 && vaccine.min_age_limit===18){
+            console.log(atd+'   '+vaccine.pincode+' '+vaccine.available_capacity_dose1);
         }
     });
 
@@ -63,8 +63,8 @@ setInterval(() => {
     if (err) { return console.log(err); }
     
     data.sessions.forEach(function(vaccine){
-        if(vaccine.available_capacity_dose1>0){
-            console.log(aatd+'     '+vaccine.pincode);
+        if(vaccine.available_capacity_dose1>0 && vaccine.min_age_limit===18){
+            console.log(aatd+'   '+vaccine.pincode+' '+vaccine.available_capacity_dose1);
         }
     });
 
@@ -73,4 +73,4 @@ setInterval(() => {
     });
 
     console.log();
-},90000);
+},9000);
