@@ -1,6 +1,10 @@
 {
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1",
-    "request": "^2.81.0"
+    "got": "^11.8.2",
+    "prompt-sync": "^4.2.0",
+    "request": "^2.81.0",
+    "util": "^0.12.4"
   }
 }
